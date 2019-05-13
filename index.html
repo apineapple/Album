@@ -36,7 +36,7 @@
 		}
 	</style>
   </head>
-  <body class="text-white">
+  <body class="text-white" onload=myFunction()>
 
 
     <!-- Optional JavaScript -->
@@ -68,10 +68,11 @@ words[3] = "https://images.genius.com/f4933940576a8f5b90dcb644a6d92ad2.1000x1000
 function PickRandomWord(frm) {
 // Generate a random number between 1 and NumberOfWords
 var rnd = Math.ceil(Math.random() * NumberOfWords)
-
+}
 // Display the word inside the text box
-document.getElementById("image") = word[rnd]
-}  
+function myFunction(){
+document.getElementById("image") = word[rnd];
+} 
 				  
 			  </script>
 	    </div>
