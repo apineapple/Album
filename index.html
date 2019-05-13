@@ -59,13 +59,19 @@
 var random_images_array = [
 	'https://images.genius.com/7900461a8f28d086ed5503faf1c72903.620x620x1.jpg',
 	'https://images.genius.com/93a042aff45826b8e533047fbb3d78a7.1000x1000x1.jpg',
-	'https://images.genius.com/f4933940576a8f5b90dcb644a6d92ad2.1000x1000x1.jpg'
+	'https://images.genius.com/f4933940576a8f5b90dcb644a6d92ad2.1000x1000x1.jpg',
+	'https://media.pitchfork.com/photos/5929a060ea9e61561daa4562/1:1/w_320/48d3e548.jpeg" style="margin-right: 5px;',
+	'http://images.genius.com/8ab11637e4843f9fc0d26cce6776dfa2.1000x1000x1.jpg',
+	'http://static1.squarespace.com/static/5105d89ee4b0869f6416d903/5137a990e4b09e6afa7e25d6/57a154d0e6f2e155f6e62365/1551809968039/?format=1500w',
+	'https://images.genius.com/33238a0dbe6470fde82c5fea51ff69e2.1000x1000x1.jpg',
+	'https://images.rapgenius.com/d30ed9fe2a8bfc9548246b5ebd1bb087.1000x1000x1.jpg',
+	'https://images.genius.com/ffb1a13cfda120ba85ab9e2a83a4e158.1000x1000x1.jpg'
 ];
     
 function getRandomImage(imgAr, path) {
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<img src="' + img + '" alt = "">';
+    var imgStr = '<img style="border-left:5px;" src="' + img + '" alt = "">';
     document.write(imgStr); document.close();
 }
 
