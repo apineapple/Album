@@ -68,10 +68,10 @@ var random_url_array= [
 	'https://open.spotify.com/album/6vGEX2ejVVsHTIsqI1teZg'
 	]
     
-function getRandomImage(imgAr, path) {
+function getRandomImage(imgAr, urlAR, path) {
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-	var url = urlAR[ num ];
+    var url = urlAR[ num ];
     var imgStr = '<a href="'+url+'"><img style="margin-left:5px; margin-right:5px; border-radius:0%;" src="' + img + '" alt = ""></a>';
     document.write(imgStr); document.close();
 }
