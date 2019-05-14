@@ -60,14 +60,15 @@ var random_images_array = [
 	'<a href="https://open.spotify.com/album/0YF8PfcGbsKg5IaFyPnlyY"><img src="https://images.genius.com/93a042aff45826b8e533047fbb3d78a7.1000x1000x1.jpg" style="margin-left: 5px; margin-right: 5px;"></a>',
 	'<a href="https://open.spotify.com/album/6vGEX2ejVVsHTIsqI1teZg"><img src="https://images.genius.com/f4933940576a8f5b90dcb644a6d92ad2.1000x1000x1.jpg" style="margin-left: 5px; margin-right: 5px;"></a>',
 	'<a href="https://open.spotify.com/album/262o5a05pMUDSV2uzo5EwQ"><img src="https://media.pitchfork.com/photos/5929a060ea9e61561daa4562/1:1/w_320/48d3e548.jpeg" style="margin-right: 5px; margin-left: 5px;"></a>',
-	'<a href="https://open.spotify.com/album/5COXoP5kj2DWfCDg0vxi4F"><img src="http://images.genius.com/8ab11637e4843f9fc0d26cce6776dfa2.1000x1000x1.jpg" style="margin-left: 5px; margin-right: 5px;"></a>'
+	'<a href="https://open.spotify.com/album/5COXoP5kj2DWfCDg0vxi4F"><img src="http://images.genius.com/8ab11637e4843f9fc0d26cce6776dfa2.1000x1000x1.jpg" style="margin-left: 5px; margin-right: 5px;"></a>',
+	'<a href="https://open.spotify.com/album/71QyofYesSsRMwFOTafnhB"><img src="http://static1.squarespace.com/static/5105d89ee4b0869f6416d903/5137a990e4b09e6afa7e25d6/57a154d0e6f2e155f6e62365/1551809968039/?format=1500w" style="margin-left:5px; margin-right:5px;"></a>'
 	
 ];
     
 function getRandomImage(imgAr, path) {
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = img;
+    var imgStr = <b style="border-radius:0%;">'+img+'</b>;
     document.write(imgStr); document.close();
 }
 </script>
